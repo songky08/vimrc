@@ -40,10 +40,7 @@ Plugin 'bling/vim-airline'
 Plugin 'SrcExpl'
 Plugin 'majutsushi/tagbar'
 Plugin 'AutoComplPop'
-"===config airline===
-let g:airline#extensions#tabline#enabled = 1
-nnoremap <Tab> :bnext<CR>
-nnoremap <S-Tab> :bprevious<CR>
+
 "===key mapping==
 nmap <F6> :NERDTreeToggle<CR>
 nmap <F7> :TagbarToggle<CR>
@@ -51,10 +48,12 @@ nmap <F8> :SrcExplToggle<CR>
 nmap <F4> :bd 1<CR>
 imap <C-k> <Up>
 imap <C-j> <Down>
-
-"===Taglist configuration===
-let Tlist_Use_Right_Window = 1
-let Tlist_WinWidth = 50
+"===config airline===
+let g:airline#extensions#tabline#enabled = 1
+nnoremap <Tab> :bnext<CR>
+nnoremap <S-Tab> :bprevious<CR>
+"===tagbar configuration===
+let g:tagbar_sort = 0
 "===SourceExplorer Configuration===
 let g:SrcExpl_winHeight = 8
 let g:SrcExpl_jumpKey = "<ENTER>" 
