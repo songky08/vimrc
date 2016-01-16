@@ -48,8 +48,10 @@ nnoremap <S-Tab> :bprevious<CR>
 nmap <F6> :NERDTreeToggle<CR>
 nmap <F7> :TagbarToggle<CR>
 nmap <F8> :SrcExplToggle<CR>
+nmap <F4> :bd 1<CR>
 imap <C-k> <Up>
 imap <C-j> <Down>
+
 "===Taglist configuration===
 let Tlist_Use_Right_Window = 1
 let Tlist_WinWidth = 50
