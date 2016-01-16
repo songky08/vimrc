@@ -19,7 +19,7 @@ if filereadable("./cscope.out")
 endif                                  
 set csverb
 
-
+filetype off
 if has("gui_running")
 set guifont=Consolas:h10:b:cDEFAULT
 au GUIEnter * winsize 80 40
@@ -27,8 +27,8 @@ endif
 
 colorscheme wombat
  
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=$HOME/.vim/bundle/Vundle.vim/
+call vundle#rc('$USERPROFILE/.vim/bundle')
 " let Vundle manage Vundle
 " required! 
 Bundle 'gmarik/vundle'
