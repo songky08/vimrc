@@ -40,6 +40,7 @@ Plugin 'bling/vim-airline'
 Plugin 'SrcExpl'
 Plugin 'majutsushi/tagbar'
 Plugin 'AutoComplPop'
+Plugin 'scrooloose/syntastic'
 
 "===key mapping==
 nmap <F6> :NERDTreeToggle<CR>
@@ -63,6 +64,15 @@ let g:SrcExpl_pluginList = [
          \ "__Tag_List__", 
          \ "_NERD_tree_" 
      \ ]
+"===syntastic configuration begin===
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_loc_list_height = 4
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
