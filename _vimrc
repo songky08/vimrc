@@ -43,12 +43,15 @@ Plugin 'AutoComplPop'
 Plugin 'scrooloose/syntastic'
 
 "===key mapping==
+nmap <F5> :reg<CR>
 nmap <F6> :NERDTreeToggle<CR>
 nmap <F7> :TagbarToggle<CR>
 nmap <F8> :SrcExplToggle<CR>
-nmap <F4> :bd 1<CR>
 imap <C-k> <Up>
 imap <C-j> <Down>
+nmap 0p "0p
+nmap 1p "1p
+nmap 2p "2p
 "===config airline===
 let g:airline#extensions#tabline#enabled = 1
 nnoremap <Tab> :bnext<CR>
