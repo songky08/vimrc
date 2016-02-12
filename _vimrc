@@ -3,6 +3,8 @@ behave mswin
 
 set sw=4		"size of an indent
 set sts=4		"a combination of spaces and tabs
+set et
+set ts=4
 set smartindent
 set cindent		"C style index
 set hlsearch		" Highlight search results
@@ -46,7 +48,6 @@ Plugin 'scrooloose/syntastic'
 nmap <F6> :NERDTreeToggle<CR>
 nmap <F7> :TagbarToggle<CR>
 nmap <F8> :SrcExplToggle<CR>
-nmap <F4> :bd 1<CR>
 imap <C-k> <Up>
 imap <C-j> <Down>
 "===config airline===
@@ -61,7 +62,6 @@ let g:SrcExpl_jumpKey = "<ENTER>"
 let g:SrcExpl_gobackKey = "<SPACE>" 
 let g:SrcExpl_isUpdateTags = 0 
 let g:SrcExpl_pluginList = [ 
-         \ "__Tag_List__", 
          \ "_NERD_tree_" 
      \ ]
 "===syntastic configuration begin===
